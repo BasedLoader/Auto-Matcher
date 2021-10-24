@@ -12,8 +12,8 @@ public class TestAutoMatch {
 		Files.createDirectories(dir);
 		Path mcA = dir.resolve("a.jar");
 		Path mcB = dir.resolve("b.jar");
-		download(mcA, "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar");
-		download(mcB, "https://launcher.mojang.com/v1/objects/dd9ca1bdc855535cd7ce0565f02285ad4d6d1ae5/server.jar");
+		download(mcA, "https://launcher.mojang.com/v1/objects/1cf89c77ed5e72401b869f66410934804f3d6f52/client.jar");
+		download(mcB, "https://launcher.mojang.com/v1/objects/fe88ac6c8a0bedc9a48e5c9b48eb0f4dc24ccc79/client.jar");
 		Path result = dir.resolve("output.match");
 		new AutoMatcher().addInputA(mcA).addInputB(mcB).execute(result);
 	}
